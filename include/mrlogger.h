@@ -48,16 +48,23 @@ public:
   // write log.
   void log(unsigned int level, const char* message, ...) {
 
-    // Parse arguments.
-    va_list args;
-    va_start(args, message);
+    if (checkLevel(level)) {
+      // Parse arguments.
+      va_list args;
+      va_start(args, message);
 
-    // TODO level check
-    printer_.print(level, message, args);
-    va_end(args);
+      // Print log.
+      printer_.print(level, message, args);
+      va_end(args);
+    }
   }
 
 private:
+
+  // Check log level.
+  bool checkLevel(unsigned int level) {
+    return level_ & level;
+  }
 
   unsigned int level_;
   __Printer printer_;
