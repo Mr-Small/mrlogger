@@ -1,0 +1,6 @@
+# Ignore build directory
+build/
+
+
+# For Mac OS
+.DS_Store
