@@ -5,13 +5,14 @@
 #define MRLOGGER_H_
 
 #include <stdio.h>
+#include <stdlib.h>
 #include <stdarg.h>
 
 #ifndef NULL
 #define NULL (0)
 #endif
 
-namespace MrLogger {
+namespace mrlogger {
 
 #define LOG_LEVEL_NONE        (0x00000000) // Not print log.
 #define LOG_LEVEL_INFO        (0x00000001) // Print infomation log.
@@ -25,34 +26,43 @@ template <class __Printer>
 class MrLogger {
 public:
 
-  // Get singleton instance.
-  static MrLogger<__Printer>* getInstance();
+  // Constructor.
+  MrLogger()
+    : level_(LOG_LEVEL) {
+  }
+
+  // Destructor.
+  virtual ~MrLogger() {
+  }
 
   // Set log level.
-  void setLevel(unsigned int level);
+  void setLevel(unsigned int level) {
+    level_ = level;
+  }
 
   // Get log level.
-  unsigned int getLevel();
+  unsigned int getLevel() {
+    return level_;
+  }
 
   // write log.
-  void log(unsigned int level, const char* message, ...);
+  void log(unsigned int level, const char* message, ...) {
+
+    // Parse arguments.
+    va_list args;
+    va_start(args, message);
+
+    // TODO level check
+    printer_.print(level, message, args);
+    va_end(args);
+  }
 
 private:
-
-  // Private constructor.
-  // Not create instance.
-  MrLogger();
-
-  // Copy constructor.
-  MrLogger(const MrLogger &obj);
-
-  // =operator
-  MrLogger &operator=(const MrLogger &obj);
 
   unsigned int level_;
   __Printer printer_;
 };
 
-} // namespace MrLogger
+} // namespace mrlogger
 
 #endif // MRLOGGER_H_
