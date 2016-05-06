@@ -63,6 +63,11 @@ private:
 
   // Check log level.
   bool checkLevel(unsigned int level) {
+    if (level_ == LOG_LEVEL_NONE
+      || level == LOG_LEVEL_NONE) {
+        // Do nothing.
+        return false;
+    }
     return level_ & level;
   }
 
