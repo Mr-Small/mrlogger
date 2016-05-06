@@ -21,50 +21,50 @@ class Printer
 {
 public:
   // Constructor.
-	Printer() {
-	};
+  Printer() {
+  };
 
   // Destructor.
-	virtual ~Printer() {
-	};
+  virtual ~Printer() {
+  };
 
   // Print to write log.
-	virtual void print(int level, const char* message, va_list args) = 0;
+  virtual void print(int level, const char* message, va_list args) = 0;
 
 protected:
 
-	std::string toLevelString(unsigned int level) {
-		std::string str = LOG_LEVEL_UNKOWN_STR;
-		switch (level) {
-			case LOG_LEVEL_INFO:
-				str = LOG_LEVEL_INFO_STR;
-				break;
-			case LOG_LEVEL_WARN:
-				str = LOG_LEVEL_WARN_STR;
-				break;
-			case LOG_LEVEL_ERROR:
-				str = LOG_LEVEL_ERROR_STR;
-				break;
-			case LOG_LEVEL_DEBUG:
-				str = LOG_LEVEL_DEBUG_STR;
-				break;
-			default:
-				break;
-		}
-		return str;
-	}
+  std::string toLevelString(unsigned int level) {
+    std::string str = LOG_LEVEL_UNKOWN_STR;
+    switch (level) {
+      case LOG_LEVEL_INFO:
+        str = LOG_LEVEL_INFO_STR;
+        break;
+      case LOG_LEVEL_WARN:
+        str = LOG_LEVEL_WARN_STR;
+        break;
+      case LOG_LEVEL_ERROR:
+        str = LOG_LEVEL_ERROR_STR;
+        break;
+      case LOG_LEVEL_DEBUG:
+        str = LOG_LEVEL_DEBUG_STR;
+        break;
+      default:
+        break;
+    }
+    return str;
+  }
 
-	// Get current date time string.
-	std::string getDateTime(const char *format) {
+  // Get current date time string.
+  std::string getDateTime(const char *format) {
 
-		std::time_t t = std::time(NULL);
-		char str[128] = {0};
+    std::time_t t = std::time(NULL);
+    char str[128] = {0};
 
-		if (std::strftime(str, sizeof(str), format, std::localtime(&t))) {
-			return std::string(str);
-		}
-		return std::string("");
-	}
+    if (std::strftime(str, sizeof(str), format, std::localtime(&t))) {
+      return std::string(str);
+    }
+    return std::string("");
+  }
 };
 
 } // namespace mrlogger
