@@ -31,6 +31,11 @@ public:
   // Print to write log.
   virtual void print(int level, const char* message, va_list args) = 0;
 
+  // Set log file name.
+  virtual void setFile(const char* file) {
+    // Do nothing.
+  }
+
 protected:
 
   std::string toLevelString(unsigned int level) {

@@ -22,6 +22,9 @@ namespace mrlogger {
 
 #define LOG_LEVEL	(LOG_LEVEL_INFO | LOG_LEVEL_WARN | LOG_LEVEL_ERROR)
 
+// Use file_printer.
+#define DEFAULT_FILE_NAME      "default.log"
+
 template <class __Printer>
 class MrLogger {
 public:
@@ -29,6 +32,13 @@ public:
   // Constructor.
   MrLogger()
     : level_(LOG_LEVEL) {
+      printer_.setFile(DEFAULT_FILE_NAME);
+  }
+
+  // Constructor with log file name.
+  MrLogger(const char *file)
+    : level_(LOG_LEVEL) {
+      printer_.setFile(file);
   }
 
   // Destructor.

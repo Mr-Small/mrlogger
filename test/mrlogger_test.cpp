@@ -1,6 +1,7 @@
 #include <gtest/gtest.h>
 #include "mrlogger.h"
 #include "printer/console_printer.h"
+#include "printer/file_printer.h"
 
 using namespace mrlogger;
 
@@ -38,4 +39,11 @@ TEST(MrLogger, ConsolePrinter_LevelNone) {
 
     MrLogger<ConsolePrinter> *logger = new MrLogger<ConsolePrinter>();
     logger->log(LOG_LEVEL_NONE, "none print");
+}
+
+// Test file printer log level infomation.
+TEST(MrLogger, FilePrinter_LevelInfo) {
+
+    MrLogger<FilePrinter> *logger = new MrLogger<FilePrinter>();
+    logger->log(LOG_LEVEL_INFO, "Test NO %d", 11);
 }
