@@ -25,7 +25,14 @@ public:
   // Set log file name.
   virtual void setFile(const char* file);
 
+  // Open file.
+  virtual void open();
+
+  // Close file.
+  virtual void close();
+
 private:
+  FILE *fp_;
   std::string file_;
 };
 

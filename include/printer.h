@@ -16,6 +16,9 @@ namespace mrlogger {
 #define LOG_LEVEL_ERROR_STR  "<E>" // Error symbol.
 #define LOG_LEVEL_DEBUG_STR  "<D>" // Debug symbol.
 
+// Date time format e.g. 2016/05/06 10:10:30
+#define DATE_TIME_FORMAT    "%Y/%m/%d %H:%M:%S"
+
 // Class printer.
 class Printer
 {
@@ -33,6 +36,16 @@ public:
 
   // Set log file name.
   virtual void setFile(const char* file) {
+    // Do nothing.
+  }
+
+  // Open print stream. e.g.file
+  virtual void open() {
+    // Do nothing.
+  }
+
+  // Close print stream.
+  virtual void close() {
     // Do nothing.
   }
 

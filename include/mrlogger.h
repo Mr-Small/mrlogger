@@ -33,16 +33,19 @@ public:
   MrLogger()
     : level_(LOG_LEVEL) {
       printer_.setFile(DEFAULT_FILE_NAME);
+      printer_.open();
   }
 
   // Constructor with log file name.
   MrLogger(const char *file)
     : level_(LOG_LEVEL) {
       printer_.setFile(file);
+      printer_.open();
   }
 
   // Destructor.
   virtual ~MrLogger() {
+    printer_.close();
   }
 
   // Set log level.

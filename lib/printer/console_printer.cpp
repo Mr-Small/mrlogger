@@ -5,8 +5,6 @@
 
 namespace mrlogger {
 
-// Date time format e.g. 2016/05/06 10:10:30
-#define DATE_TIME_FORMAT    "%Y/%m/%d %H:%M:%S"
 
 // Constructor.
 ConsolePrinter::ConsolePrinter()

@@ -1,6 +1,8 @@
 # Ignore build directory
 build/
 
+# Ignore log file
+*.log
 
 # For Mac OS
 .DS_Store
