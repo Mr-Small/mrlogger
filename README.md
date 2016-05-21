@@ -26,7 +26,44 @@ MrLogger<FilePrinter> *logger = new MrLogger<FilePrinter>("filename.log");
 logger->log(LOG_LEVEL_WARN, "warning no.%d", 2);
 ```
 
-## Usage
+## Log Level
+
+As the level of the log is following:
+
+* **LOG_LEVEL_NONE**
+
+  Not print log.
+* **LOG_LEVEL_INFO**
+
+  Print information log.
+* **LOG_LEVEL_WARN**
+
+  Print warning log.
+* **LOG_LEVEL_ERROR**
+
+  Print error log.
+* **LOG_LEVEL_DEBUG**
+
+  Print debug log.
+
+> Set log level
+
+Print only debug log in the following example.
+
+```c++
+MrLogger<ConsolePrinter> *logger = new MrLogger<ConsolePrinter>();
+logger->setLevel(LOG_LEVEL_DEBUG);
+```
+
+> Add log level
+
+Print debug and information log in the following example.
+
+```c++
+MrLogger<ConsolePrinter> *logger = new MrLogger<ConsolePrinter>();
+logger->setLevel(LOG_LEVEL_DEBUG);
+logger->addLevel(LOG_LEVEL_INFO); // debug + info
+```
 
 ## Licence
 
