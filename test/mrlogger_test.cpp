@@ -5,6 +5,31 @@
 
 using namespace mrlogger;
 
+// Test default log level.
+TEST(MrLogger, Default_LogLevel) {
+
+    MrLogger<ConsolePrinter> *logger = new MrLogger<ConsolePrinter>();
+    ASSERT_EQ(LOG_LEVEL, logger->getLevel());
+}
+
+// Test set/get log level.
+TEST(MrLogger, SetGet_LogLevel) {
+
+    MrLogger<ConsolePrinter> *logger = new MrLogger<ConsolePrinter>();
+    logger->setLevel(LOG_LEVEL_ERROR);
+    ASSERT_EQ(LOG_LEVEL_ERROR, logger->getLevel());
+}
+
+// Test add log level.
+TEST(MrLogger, Add_LogLevel) {
+
+    MrLogger<ConsolePrinter> *logger = new MrLogger<ConsolePrinter>();
+    logger->setLevel(LOG_LEVEL_INFO);
+    logger->addLevel(LOG_LEVEL_WARN);
+    logger->addLevel(LOG_LEVEL_ERROR);
+    ASSERT_EQ(LOG_LEVEL, logger->getLevel());
+}
+
 // Test console printer log level infomation.
 TEST(MrLogger, ConsolePrinter_LevelInfo) {
 

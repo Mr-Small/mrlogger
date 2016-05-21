@@ -53,6 +53,10 @@ public:
     level_ = level;
   }
 
+  void addLevel(unsigned int level) {
+    level_ |= level;
+  }
+
   // Get log level.
   unsigned int getLevel() {
     return level_;
