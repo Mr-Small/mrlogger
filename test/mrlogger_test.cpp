@@ -71,4 +71,7 @@ TEST(MrLogger, FilePrinter_LevelInfo) {
 
     MrLogger<FilePrinter> *logger = new MrLogger<FilePrinter>();
     logger->log(LOG_LEVEL_INFO, "Test NO %d", 11);
+
+    FILE *fp = fopen("default.log", "r");
+    ASSERT_TRUE(fp != NULL);
 }
