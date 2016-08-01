@@ -6,3 +6,6 @@ build/
 
 # For Mac OS
 .DS_Store
+
+# Android
+platforms/android/obj
