@@ -1,0 +1,308 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9EACDDCC1D96AC5C002871FA /* console_printer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EACDDCA1D96AC5C002871FA /* console_printer.cpp */; };
+		9EACDDCD1D96AC5C002871FA /* file_printer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EACDDCB1D96AC5C002871FA /* file_printer.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9EACDDB41D96AB4F002871FA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9EACDDB61D96AB4F002871FA /* libmrlogger.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libmrlogger.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EACDDC61D96AC16002871FA /* mrlogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = mrlogger.h; path = ../../../include/mrlogger.h; sourceTree = "<group>"; };
+		9EACDDC71D96AC16002871FA /* printer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = printer.h; path = ../../../include/printer.h; sourceTree = "<group>"; };
+		9EACDDC81D96AC35002871FA /* console_printer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = console_printer.h; path = ../../../include/printer/console_printer.h; sourceTree = "<group>"; };
+		9EACDDC91D96AC35002871FA /* file_printer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = file_printer.h; path = ../../../include/printer/file_printer.h; sourceTree = "<group>"; };
+		9EACDDCA1D96AC5C002871FA /* console_printer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = console_printer.cpp; path = ../../../lib/printer/console_printer.cpp; sourceTree = "<group>"; };
+		9EACDDCB1D96AC5C002871FA /* file_printer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = file_printer.cpp; path = ../../../lib/printer/file_printer.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9EACDDB31D96AB4F002871FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9EACDDAD1D96AB4F002871FA = {
+			isa = PBXGroup;
+			children = (
+				9EACDDB81D96AB50002871FA /* mrlogger */,
+				9EACDDB71D96AB4F002871FA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9EACDDB71D96AB4F002871FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9EACDDB61D96AB4F002871FA /* libmrlogger.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9EACDDB81D96AB50002871FA /* mrlogger */ = {
+			isa = PBXGroup;
+			children = (
+				9EACDDC31D96ABE2002871FA /* lib */,
+				9EACDDC21D96ABDB002871FA /* include */,
+			);
+			path = mrlogger;
+			sourceTree = "<group>";
+		};
+		9EACDDC21D96ABDB002871FA /* include */ = {
+			isa = PBXGroup;
+			children = (
+				9EACDDC61D96AC16002871FA /* mrlogger.h */,
+				9EACDDC71D96AC16002871FA /* printer.h */,
+				9EACDDC41D96ABE8002871FA /* printer */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+		9EACDDC31D96ABE2002871FA /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				9EACDDC51D96ABEF002871FA /* printer */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+		9EACDDC41D96ABE8002871FA /* printer */ = {
+			isa = PBXGroup;
+			children = (
+				9EACDDC81D96AC35002871FA /* console_printer.h */,
+				9EACDDC91D96AC35002871FA /* file_printer.h */,
+			);
+			name = printer;
+			sourceTree = "<group>";
+		};
+		9EACDDC51D96ABEF002871FA /* printer */ = {
+			isa = PBXGroup;
+			children = (
+				9EACDDCA1D96AC5C002871FA /* console_printer.cpp */,
+				9EACDDCB1D96AC5C002871FA /* file_printer.cpp */,
+			);
+			name = printer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9EACDDB51D96AB4F002871FA /* mrlogger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EACDDBF1D96AB50002871FA /* Build configuration list for PBXNativeTarget "mrlogger" */;
+			buildPhases = (
+				9EACDDB21D96AB4F002871FA /* Sources */,
+				9EACDDB31D96AB4F002871FA /* Frameworks */,
+				9EACDDB41D96AB4F002871FA /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mrlogger;
+			productName = mrlogger;
+			productReference = 9EACDDB61D96AB4F002871FA /* libmrlogger.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9EACDDAE1D96AB4F002871FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = mr.small;
+				TargetAttributes = {
+					9EACDDB51D96AB4F002871FA = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = AEA7DDG699;
+					};
+				};
+			};
+			buildConfigurationList = 9EACDDB11D96AB4F002871FA /* Build configuration list for PBXProject "mrlogger" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9EACDDAD1D96AB4F002871FA;
+			productRefGroup = 9EACDDB71D96AB4F002871FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9EACDDB51D96AB4F002871FA /* mrlogger */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9EACDDB21D96AB4F002871FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EACDDCD1D96AC5C002871FA /* file_printer.cpp in Sources */,
+				9EACDDCC1D96AC5C002871FA /* console_printer.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9EACDDBD1D96AB50002871FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9EACDDBE1D96AB50002871FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9EACDDC01D96AB50002871FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../include";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9EACDDC11D96AB50002871FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../include";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9EACDDB11D96AB4F002871FA /* Build configuration list for PBXProject "mrlogger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EACDDBD1D96AB50002871FA /* Debug */,
+				9EACDDBE1D96AB50002871FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9EACDDBF1D96AB50002871FA /* Build configuration list for PBXNativeTarget "mrlogger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EACDDC01D96AB50002871FA /* Debug */,
+				9EACDDC11D96AB50002871FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9EACDDAE1D96AB4F002871FA /* Project object */;
+}

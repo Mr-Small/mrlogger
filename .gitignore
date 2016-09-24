@@ -7,6 +7,10 @@ build/
 # For Mac OS
 .DS_Store
 
+# iOS
+xcuserdata/
+platforms/ios/DerivedData/
+
 # Android
 platforms/android/obj
 
