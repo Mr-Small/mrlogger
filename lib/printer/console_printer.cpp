@@ -60,7 +60,7 @@ void ConsolePrinter::print(int level, const char* message, va_list args) {
 
   // Line feed.
   std::string lf = getLineFeed();
-  PRINT(lf.c_str());
+  PRINT("%s", lf.c_str());
 }
 
 } // namespace mrlogger

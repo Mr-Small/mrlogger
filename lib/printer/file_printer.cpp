@@ -31,7 +31,7 @@ void FilePrinter::print(int level, const char* message, va_list args) {
     vfprintf(fp_, message, args);
     // Line feed.
     std::string lf = getLineFeed();
-	fprintf(fp_, lf.c_str());
+    fprintf(fp_, "%s", lf.c_str());
   }
 }
 
