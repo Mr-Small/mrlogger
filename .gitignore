@@ -9,3 +9,14 @@ build/
 
 # Android
 platforms/android/obj
+
+# Windows
+.vs/
+Debug/
+Release/
+x64/
+platforms/win/Debug
+platforms/win/Release
+platforms/win/x64
+*.sdf
+*.user
