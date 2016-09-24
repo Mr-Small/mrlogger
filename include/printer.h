@@ -83,6 +83,15 @@ protected:
     }
     return std::string("");
   }
+
+  // Get line feed.
+  std::string getLineFeed() {
+    std::string lf = std::string("\n");
+#if defined(_WIN32) || defined(_WIN64)
+	lf = std::string("\r\n");
+#endif
+	return lf;
+  }
 };
 
 } // namespace mrlogger

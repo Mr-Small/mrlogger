@@ -29,6 +29,9 @@ void FilePrinter::print(int level, const char* message, va_list args) {
 
     // File print valiable.
     vfprintf(fp_, message, args);
+    // Line feed.
+    std::string lf = getLineFeed();
+	fprintf(fp_, lf.c_str());
   }
 }
 
