@@ -26,6 +26,15 @@ MrLogger<FilePrinter> *logger = new MrLogger<FilePrinter>("filename.log");
 logger->log(LOG_LEVEL_WARN, "warning no.%d", 2);
 ```
 
+> Silent Printer
+
+If not output, using the following printer:
+```c++
+MrLogger<SilentPrinter> *logger = new MrLogger<SilentPrinter>();
+logger->log(LOG_LEVEL_DEBUG, "debug no.%d", 3);
+```
+
+
 ## Log Level
 
 As the level of the log is following:
