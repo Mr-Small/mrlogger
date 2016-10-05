@@ -7,6 +7,7 @@ cmake_minimum_required(VERSION 2.8)
 set(SRC
     printer/console_printer.cpp
     printer/file_printer.cpp
+    printer/silent_printer.cpp
 )
 
 include_directories(

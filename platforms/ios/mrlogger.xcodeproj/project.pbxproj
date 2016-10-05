@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9EACDDCC1D96AC5C002871FA /* console_printer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EACDDCA1D96AC5C002871FA /* console_printer.cpp */; };
 		9EACDDCD1D96AC5C002871FA /* file_printer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EACDDCB1D96AC5C002871FA /* file_printer.cpp */; };
+		D3BAFAB21DA55CAC00D87316 /* silent_printer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D3BAFAB11DA55CAC00D87316 /* silent_printer.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		9EACDDC91D96AC35002871FA /* file_printer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = file_printer.h; path = ../../../include/printer/file_printer.h; sourceTree = "<group>"; };
 		9EACDDCA1D96AC5C002871FA /* console_printer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = console_printer.cpp; path = ../../../lib/printer/console_printer.cpp; sourceTree = "<group>"; };
 		9EACDDCB1D96AC5C002871FA /* file_printer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = file_printer.cpp; path = ../../../lib/printer/file_printer.cpp; sourceTree = "<group>"; };
+		D3BAFAB01DA55C9A00D87316 /* silent_printer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = silent_printer.h; path = ../../../include/printer/silent_printer.h; sourceTree = "<group>"; };
+		D3BAFAB11DA55CAC00D87316 /* silent_printer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = silent_printer.cpp; path = ../../../lib/printer/silent_printer.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +95,7 @@
 			children = (
 				9EACDDC81D96AC35002871FA /* console_printer.h */,
 				9EACDDC91D96AC35002871FA /* file_printer.h */,
+				D3BAFAB01DA55C9A00D87316 /* silent_printer.h */,
 			);
 			name = printer;
 			sourceTree = "<group>";
@@ -101,6 +105,7 @@
 			children = (
 				9EACDDCA1D96AC5C002871FA /* console_printer.cpp */,
 				9EACDDCB1D96AC5C002871FA /* file_printer.cpp */,
+				D3BAFAB11DA55CAC00D87316 /* silent_printer.cpp */,
 			);
 			name = printer;
 			sourceTree = "<group>";
@@ -163,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9EACDDCD1D96AC5C002871FA /* file_printer.cpp in Sources */,
+				D3BAFAB21DA55CAC00D87316 /* silent_printer.cpp in Sources */,
 				9EACDDCC1D96AC5C002871FA /* console_printer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

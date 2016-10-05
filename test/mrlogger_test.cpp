@@ -2,6 +2,7 @@
 #include "mrlogger.h"
 #include "printer/console_printer.h"
 #include "printer/file_printer.h"
+#include "printer/silent_printer.h"
 
 using namespace mrlogger;
 
@@ -74,4 +75,11 @@ TEST(MrLogger, FilePrinter_LevelInfo) {
 
     FILE *fp = fopen("default.log", "r");
     ASSERT_TRUE(fp != NULL);
+}
+
+// Test not print anywhere.
+TEST(MrLogger, SilentPrinter) {
+
+    MrLogger<SilentPrinter> *logger = new MrLogger<SilentPrinter>();
+    logger->log(LOG_LEVEL_INFO, "Test NO %d", 12);
 }
