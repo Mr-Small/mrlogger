@@ -26,14 +26,14 @@
 
 /* Begin PBXFileReference section */
 		9EACDDB61D96AB4F002871FA /* libmrlogger.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libmrlogger.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		9EACDDC61D96AC16002871FA /* mrlogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = mrlogger.h; path = ../../../include/mrlogger.h; sourceTree = "<group>"; };
-		9EACDDC71D96AC16002871FA /* printer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = printer.h; path = ../../../include/printer.h; sourceTree = "<group>"; };
-		9EACDDC81D96AC35002871FA /* console_printer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = console_printer.h; path = ../../../include/printer/console_printer.h; sourceTree = "<group>"; };
-		9EACDDC91D96AC35002871FA /* file_printer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = file_printer.h; path = ../../../include/printer/file_printer.h; sourceTree = "<group>"; };
-		9EACDDCA1D96AC5C002871FA /* console_printer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = console_printer.cpp; path = ../../../lib/printer/console_printer.cpp; sourceTree = "<group>"; };
-		9EACDDCB1D96AC5C002871FA /* file_printer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = file_printer.cpp; path = ../../../lib/printer/file_printer.cpp; sourceTree = "<group>"; };
-		D3BAFAB01DA55C9A00D87316 /* silent_printer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = silent_printer.h; path = ../../../include/printer/silent_printer.h; sourceTree = "<group>"; };
-		D3BAFAB11DA55CAC00D87316 /* silent_printer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = silent_printer.cpp; path = ../../../lib/printer/silent_printer.cpp; sourceTree = "<group>"; };
+		9EACDDC61D96AC16002871FA /* mrlogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = mrlogger.h; path = ../../include/mrlogger.h; sourceTree = "<group>"; };
+		9EACDDC71D96AC16002871FA /* printer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = printer.h; path = ../../include/printer.h; sourceTree = "<group>"; };
+		9EACDDC81D96AC35002871FA /* console_printer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = console_printer.h; path = ../../include/printer/console_printer.h; sourceTree = "<group>"; };
+		9EACDDC91D96AC35002871FA /* file_printer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = file_printer.h; path = ../../include/printer/file_printer.h; sourceTree = "<group>"; };
+		9EACDDCA1D96AC5C002871FA /* console_printer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = console_printer.cpp; path = ../../lib/printer/console_printer.cpp; sourceTree = "<group>"; };
+		9EACDDCB1D96AC5C002871FA /* file_printer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = file_printer.cpp; path = ../../lib/printer/file_printer.cpp; sourceTree = "<group>"; };
+		D3BAFAB01DA55C9A00D87316 /* silent_printer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = silent_printer.h; path = ../../include/printer/silent_printer.h; sourceTree = "<group>"; };
+		D3BAFAB11DA55CAC00D87316 /* silent_printer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = silent_printer.cpp; path = ../../lib/printer/silent_printer.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
